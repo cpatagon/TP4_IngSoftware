@@ -1,0 +1,24 @@
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/clases/clase7$ ls
+ Clase_07_IngSoft_B.mp4      clase7_INGSoftware.org    clase7_INGSoftware.tex
+ clase_07_IngSoft.mp4        clase7_INGSoftware.org~   fig
+'#clase7_INGSoftware.org#'   clase7_INGSoftware.pdf   'Tema 8 - Herramientas para implementación.pdf'
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/clases/clase7$ pre-commit run --all-files
+An error has occurred: FatalError: git failed. Is it installed, and are you in a Git repository directory?
+Check the log at /home/lgomez/.cache/pre-commit/pre-commit.log
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/clases/clase7$ git add .
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/clases/clase7$ ls
+ Clase_07_IngSoft_B.mp4      clase7_INGSoftware.org    clase7_INGSoftware.tex
+ clase_07_IngSoft.mp4        clase7_INGSoftware.org~   fig
+'#clase7_INGSoftware.org#'   clase7_INGSoftware.pdf   'Tema 8 - Herramientas para implementación.pdf'
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/clases/clase7$ cd ..
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/clases$ cd ..
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE$ cd TP/
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP$ cd TP4_doxy_git/
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ ls
+ build   doxyfile   inc   licenses.txt   makefile  '#readme.md#'   readme.md   src
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git add .
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git checkout -b gpio
+Cambiado a nueva rama 'gpio'
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git add .
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git commit -m "se gener nueva rama gpio"

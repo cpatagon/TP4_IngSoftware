@@ -29,7 +29,7 @@ rama develop de repositorio de la cátedra.
 
 ## Construcción de gitignore
 
-l archivo .gitignore es una herramienta esencial en el sistema de control de versiones Git. Permite a los desarrolladores especificar qué archivos y directorios deben ser ignorados por Git y no ser rastreados en el repositorio. Esto es útil para evitar que archivos temporales, de compilación o sensibles se incluyan accidentalmente en el historial de cambios, manteniendo el repositorio limpio y organizado.
+El archivo .gitignore es una herramienta esencial en el sistema de control de versiones Git. Permite a los desarrolladores especificar qué archivos y directorios deben ser ignorados por Git y no ser rastreados en el repositorio. Esto es útil para evitar que archivos temporales, de compilación o sensibles se incluyan accidentalmente en el historial de cambios, manteniendo el repositorio limpio y organizado.
 
 Una herramienta para generar el archivo .gitignore de manera  personalizada de acuerdo   a las necesidades del usuario es:
 
@@ -62,4 +62,39 @@ make doc
 
 ```
 make all
+```
+
+## Git
+
+### Crear una nueva rama
+
+
+Puedes crear una nueva rama y cambiar a ella utilizando:
+
+``` shell
+git checkout -b nombre-ramma
+```
+ Reemplaza nombre-rama con el nombre que deseas para tu nueva rama.
+
+### Realiza Cambios (si es necesario):
+
+Realiza cualquier cambio que necesites en tu código o archivos.
+
+### Confirma los Cambios:
+
+Si has realizado cambios, guárdalos con:
+
+
+
+``` shell
+    git add .
+    git commit -m "Tu mensaje de commit"
+```
+
+### Sube la Nueva Rama a GitHub:
+
+Sube tu nueva rama al repositorio remoto en GitHub con:
+
+``` shell
+    git push origin nombre-rama
 ```
