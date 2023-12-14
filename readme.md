@@ -63,26 +63,30 @@ Para este proyecto se construyo el siguiente archivo makefile [enlace](https://g
 Este Makefile está diseñado para un proyecto de software en C. La estructura del archivo se detalla a continuación:
 
 Definición de directorios:
-        **SRC_DIR:** Directorio de los archivos fuente (.c).
-        **INC_DIR:** Directorio de archivos de cabecera (.h).
-        **OUT_DIR:** Directorio de salida para los archivos generados.
-        **OBJ_DIR:** Subdirectorio en OUT_DIR para los archivos objeto (.o).
+
+ - **SRC_DIR:** Directorio de los archivos fuente (.c).
+ - **INC_DIR:** Directorio de archivos de cabecera (.h).
+ - **OUT_DIR:** Directorio de salida para los archivos generados.
+ - **OBJ_DIR:** Subdirectorio en OUT_DIR para los archivos objeto (.o).
 
 Localización de archivos fuente y objeto:
-        **SRC_FILES:** Encuentra todos los archivos .c en SRC_DIR.
-        **OBJ_FILES:** Convierte las rutas de SRC_FILES a rutas en OBJ_DIR para los archivos .o.
+
+ - **SRC_FILES:** Encuentra todos los archivos .c en SRC_DIR.
+ - **OBJ_FILES:** Convierte las rutas de SRC_FILES a rutas en OBJ_DIR para los archivos .o.
 
 Meta predeterminada:
-        **.DEFAULT_GOAL:** Establece all como la meta predeterminada.
+
+ - **.DEFAULT_GOAL:** Establece all como la meta predeterminada.
 
 Inclusión de archivos de dependencia:
-        **-include:** Incluye archivos de dependencia para cada archivo objeto.
+ - **-include:** Incluye archivos de dependencia para cada archivo objeto.
 
 Reglas:
-        **all:** Enlaza los archivos objeto y genera el ejecutable app.elf en OUT_DIR.
+
+ - **all:** Enlaza los archivos objeto y genera el ejecutable app.elf en OUT_DIR.
 		Regla de patrón para compilar archivos fuente a objetos: Crea OBJ_DIR si no existe, compila cada archivo .c a .o y genera archivos de dependencia.
-        **clean:** Elimina OUT_DIR y su contenido.
-        **doc:** Genera documentación utilizando Doxygen y doxyfile.
+ - **clean:** Elimina OUT_DIR y su contenido.
+ - **doc:** Genera documentación utilizando Doxygen y doxyfile.
 
 
 
