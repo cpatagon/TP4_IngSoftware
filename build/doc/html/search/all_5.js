@@ -1,1 +1,7 @@
-var searchData = [ [ 'readme_2emd_8', [ 'readme.md', [ '../d0/d20/readme_8md.html', 1, '' ] ] ] ];
+var searchData = [ [
+    'not_20',
+    [
+        'not',
+        [ '../d2/d50/licenses_8txt.html#a794d8ac15036e587c40267629fb767ec', 1, 'licenses.txt' ]
+    ]
+] ];

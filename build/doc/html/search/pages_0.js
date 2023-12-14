@@ -1,4 +1,4 @@
 var searchData = [ [
-    'trabajo_20practico_20numero_204_21',
-    [ 'Trabajo Practico Numero 4', [ '../da/d83/md_readme.html', 1, '' ] ]
+    'trabajo_20práctico_20número_204_20_28tp4_29_59',
+    [ 'Trabajo práctico número 4 (TP4)', [ '../da/d83/md_readme.html', 1, '' ] ]
 ] ];

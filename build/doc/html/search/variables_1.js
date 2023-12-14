@@ -1,7 +1,4 @@
 var searchData = [ [
-    'version_20',
-    [
-        'Version',
-        [ '../d2/d50/licenses_8txt.html#a457a10a82940188536c43461775a7244', 1, 'licenses.txt' ]
-    ]
+    'output_48',
+    [ 'output', [ '../d5/d3d/structgpio__h.html#ac8417b655d0d4543f38713f704fabcb4', 1, 'gpio_h' ] ]
 ] ];
