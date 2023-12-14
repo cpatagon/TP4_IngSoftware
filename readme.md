@@ -225,4 +225,6 @@ Doxygen es una herramienta de generación de documentación para lenguajes de pr
 
 El doxyfile es un archivo de configuración para Doxygen. Contiene diversas opciones para personalizar cómo Doxygen analiza el código fuente y genera la documentación. Los desarrolladores pueden ajustar aspectos como el formato de salida, directorios a incluir o excluir, y cómo se deben interpretar los comentarios en el código. Este archivo es esencial para adaptar Doxygen a las necesidades específicas de un proyecto.
 
-el archivo de configuración empleado de doxyfile lo puedes encontrar en el siguiente [enlace](https://github.com/cpatagon/TP4_IngSoftware/blob/gpio/doxyfile "archivo doxyfile")
+El archivo de configuración empleado de doxyfile lo puedes encontrar en el siguiente [enlace](https://github.com/cpatagon/TP4_IngSoftware/blob/gpio/doxyfile "archivo doxyfile")
+
+La página web generada la puede encontrar en siguiente [enlace](https://github.com/cpatagon/TP4_IngSoftware/blob/gpio/build/doc/html/index.html "enlace web")
