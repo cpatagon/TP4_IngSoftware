@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TP4: Trabajo Practico Numero 4</title>
+<title>TP4: Trabajo práctico número 4 (TP4)</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -83,12 +83,32 @@ $(document).ready(function(){initNavTree('da/d83/md_readme.html','../../'); init
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Trabajo Practico Numero 4 </div>  </div>
+<div class="title">Trabajo práctico número 4 (TP4) </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
-Uso del repositorio</h1>
-<p><em>Author:</em> Luis Gómez <em>Motivo:</em> como parte del Trabajo Práctico del ramo de ingeniería de software</p>
+Antecedentes generales</h1>
+<p><em>Autor:</em> Luis Gómez P</p>
+<p><b>Docente:</b></p>
+<p><b>Motivo:</b> como parte del Trabajo Práctico del ramo de ingeniería de software</p>
+<p><b>Ojetivo:</b> Configurar un entorno productivo para la generación de Código en C utilizando herramientas como GitHub, Doxygen, clang-format, pre-commit y makefile.</p>
+<p>Completar las tareas habituales al realizar cambios en un repositorio GIT compartido. Documentar las funciones con Doxygen. Modificar un archivo makefile existente agregando una nueva regla</p>
+<p>En este caso particular también se configuraran algunas herramientas en emacs.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Entregables</h1>
+<p>Los entregables requeridos son:</p><ol type="1">
+<li>Commit con la resolución de un conflicto en la rama master del repositorio compartido por la cátedra.</li>
+<li>Repositorio privado derivado mediante un fork del repositorio de la cátedra con el código fuente documentado usando doxygen y una regla en el archivo makefile que genere toda la documentación del proyecto.</li>
+<li>Pull request para volcar los cambios de la rama develop del repositorio privado en la rama develop de repositorio de la cátedra.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Construcción de gitignore</h1>
+<p>El archivo .gitignore es una herramienta esencial en el sistema de control de versiones Git. Permite a los desarrolladores especificar qué archivos y directorios deben ser ignorados por Git y no ser rastreados en el repositorio. Esto es útil para evitar que archivos temporales, de compilación o sensibles se incluyan accidentalmente en el historial de cambios, manteniendo el repositorio limpio y organizado.</p>
+<p>Una herramienta para generar el archivo .gitignore de manera personalizada de acuerdo a las necesidades del usuario es:</p>
+<p><a href="https://www.toptal.com/developers/gitignore/">https://www.toptal.com/developers/gitignore/</a></p>
+<p>En esta página puedes incluir el lenguaje en el que trabajaras y la IDE por ejemplo.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Clang-Format</h1>
 <p>Este repositorio utiliza pre-commit para validaciones de formato. Para trabajar con el mismo usted debería tener instalado:</p>
 <ol type="1">
 <li>pre-commit (<a href="https://pre-commit.com/#install">https://pre-commit.com/#install</a>)</li>
@@ -99,6 +119,25 @@ Uso del repositorio</h1>
 </div><!-- fragment --><p>Para generar la documentación del proyecto se utiliza el siguiente comando:</p>
 <div class="fragment"><div class="line">make doc</div>
 </div><!-- fragment --><div class="fragment"><div class="line">make all</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+Git</h1>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Crear una nueva rama</h2>
+<p>Puedes crear una nueva rama y cambiar a ella utilizando:</p>
+<div class="fragment"><div class="line">git checkout -b nombre-ramma</div>
+</div><!-- fragment --><p>Reemplaza nombre-rama con el nombre que deseas para tu nueva rama.</p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Realiza Cambios (si es necesario):</h2>
+<p>Realiza cualquier cambio que necesites en tu código o archivos.</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Confirma los Cambios:</h2>
+<p>Si has realizado cambios, guárdalos con:</p>
+<div class="fragment"><div class="line">git add .</div>
+<div class="line">git commit -m &quot;Tu mensaje de commit&quot;</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
+Sube la Nueva Rama a GitHub:</h2>
+<p>Sube tu nueva rama al repositorio remoto en GitHub con:</p>
+<div class="fragment"><div class="line">git push origin nombre-rama</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

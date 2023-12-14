@@ -23,21 +23,40 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "TP4", "index.html", [
-    [ "Trabajo Practico Numero 4", "da/d83/md_readme.html", [
-      [ "Uso del repositorio", "da/d83/md_readme.html#autotoc_md1", null ]
+    [ "Trabajo práctico número 4 (TP4)", "da/d83/md_readme.html", [
+      [ "Antecedentes generales", "da/d83/md_readme.html#autotoc_md1", null ],
+      [ "Entregables", "da/d83/md_readme.html#autotoc_md2", null ],
+      [ "Construcción de gitignore", "da/d83/md_readme.html#autotoc_md3", null ],
+      [ "Clang-Format", "da/d83/md_readme.html#autotoc_md4", null ],
+      [ "Git", "da/d83/md_readme.html#autotoc_md5", [
+        [ "Crear una nueva rama", "da/d83/md_readme.html#autotoc_md6", null ],
+        [ "Realiza Cambios (si es necesario):", "da/d83/md_readme.html#autotoc_md7", null ],
+        [ "Confirma los Cambios:", "da/d83/md_readme.html#autotoc_md8", null ],
+        [ "Sube la Nueva Rama a GitHub:", "da/d83/md_readme.html#autotoc_md9", null ]
+      ] ]
+    ] ],
+    [ "Estructuras de Datos", "annotated.html", [
+      [ "Estructura de datos", "annotated.html", "annotated_dup" ],
+      [ "Índice de estructura de datos", "classes.html", null ],
+      [ "Campos de datos", "functions.html", [
+        [ "Todo", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
     ] ],
     [ "Archivos", "files.html", [
       [ "Lista de archivos", "files.html", "files_dup" ],
       [ "Globales", "globals.html", [
         [ "Todo", "globals.html", null ],
         [ "Funciones", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ]
+        [ "Variables", "globals_vars.html", null ],
+        [ "typedefs", "globals_type.html", null ],
+        [ "defines", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
 ];
 
-var NAVTREEINDEX = [ "d0/d29/main_8c.html" ];
+var NAVTREEINDEX = [ "annotated.html" ];
 
 var SYNCONMSG = 'click en deshabilitar sincronización';
 var SYNCOFFMSG = 'click en habilitar sincronización';

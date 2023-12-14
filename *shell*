@@ -22,3 +22,121 @@ fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
 Cambiado a nueva rama 'gpio'
 (base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git add .
 (base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git commit -m "se gener nueva rama gpio"
+Check Yaml...........................................(no files to check)Skipped
+Fix End of Files.........................................................Passed
+Trim Trailing Whitespace.................................................Failed
+- hook id: trailing-whitespace
+- exit code: 1
+- files were modified by this hook
+
+Fixing readme.md
+
+Check for case conflicts.................................................Passed
+Check for merge conflicts................................................Passed
+Formating C files with Clang-Format..................(no files to check)Skipped
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git commit -m "se gener nueva rama gpio"
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to /home/lgomez/.cache/pre-commit/patch1702484813-22313.
+Check Yaml...........................................(no files to check)Skipped
+Fix End of Files.........................................................Passed
+Trim Trailing Whitespace.................................................Failed
+- hook id: trailing-whitespace
+- exit code: 1
+- files were modified by this hook
+
+Fixing readme.md
+
+Check for case conflicts.................................................Passed
+Check for merge conflicts................................................Passed
+Formating C files with Clang-Format..................(no files to check)Skipped
+[WARNING] Stashed changes conflicted with hook auto-fixes... Rolling back fixes...
+[INFO] Restored changes from /home/lgomez/.cache/pre-commit/patch1702484813-22313.
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git commit -m "se gener nueva rama gpio"
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to /home/lgomez/.cache/pre-commit/patch1702484829-22348.
+Check Yaml...........................................(no files to check)Skipped
+Fix End of Files.........................................................Passed
+Trim Trailing Whitespace.................................................Failed
+- hook id: trailing-whitespace
+- exit code: 1
+- files were modified by this hook
+
+Fixing readme.md
+
+Check for case conflicts.................................................Passed
+Check for merge conflicts................................................Passed
+Formating C files with Clang-Format..................(no files to check)Skipped
+[WARNING] Stashed changes conflicted with hook auto-fixes... Rolling back fixes...
+[INFO] Restored changes from /home/lgomez/.cache/pre-commit/patch1702484829-22348.
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ pre-commit run --all-files
+Check Yaml...............................................................Passed
+Fix End of Files.........................................................Passed
+Trim Trailing Whitespace.................................................Passed
+Check for case conflicts.................................................Passed
+Check for merge conflicts................................................Passed
+Formating C files with Clang-Format......................................Passed
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git add .
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git commit -m "se gener nueva rama gpio"
+Check Yaml...........................................(no files to check)Skipped
+Fix End of Files.........................................................Failed
+- hook id: end-of-file-fixer
+- exit code: 1
+- files were modified by this hook
+
+Fixing *shell*
+
+Trim Trailing Whitespace.................................................Passed
+Check for case conflicts.................................................Passed
+Check for merge conflicts................................................Passed
+Formating C files with Clang-Format..................(no files to check)Skipped
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git push origin gpio
+Total 0 (delta 0), reusado 0 (delta 0)
+remote:
+remote: Create a pull request for 'gpio' on GitHub by visiting:
+remote:      https://github.com/cpatagon/TP4_IngSoftware/pull/new/gpio
+remote:
+To github.com:cpatagon/TP4_IngSoftware.git
+ * [new branch]      gpio -> gpio
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git add .
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ pre-commit run --all-files
+Check Yaml...............................................................Passed
+Fix End of Files.........................................................Passed
+Trim Trailing Whitespace.................................................Failed
+- hook id: trailing-whitespace
+- exit code: 1
+- files were modified by this hook
+
+Fixing readme.md
+
+Check for case conflicts.................................................Passed
+Check for merge conflicts................................................Passed
+Formating C files with Clang-Format......................................Passed
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ pre-commit run --all-files
+Check Yaml...............................................................Passed
+Fix End of Files.........................................................Passed
+Trim Trailing Whitespace.................................................Passed
+Check for case conflicts.................................................Passed
+Check for merge conflicts................................................Passed
+Formating C files with Clang-Format......................................Passed
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git add .
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git commit -m "se actualiza readme en gpio"
+Check Yaml...........................................(no files to check)Skipped
+Fix End of Files.........................................................Passed
+Trim Trailing Whitespace.................................................Passed
+Check for case conflicts.................................................Passed
+Check for merge conflicts................................................Passed
+Formating C files with Clang-Format..................(no files to check)Skipped
+[gpio f3a6045] se actualiza readme en gpio
+ 2 files changed, 60 insertions(+), 1 deletion(-)
+ create mode 100644 *shell*
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$ git push origin gpio
+Enumerando objetos: 6, listo.
+Contando objetos: 100% (6/6), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos: 100% (4/4), listo.
+Escribiendo objetos: 100% (4/4), 1.21 KiB | 1.21 MiB/s, listo.
+Total 4 (delta 2), reusado 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:cpatagon/TP4_IngSoftware.git
+   849e3c7..f3a6045  gpio -> gpio
+(base) lgomez@meteo:~/Documentos/MAGISTER_UBA/Bimestre03/ING_SOFTWARE/TP/TP4_doxy_git$

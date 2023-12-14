@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP4: Fichero Fuente inc/gpio.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP4
+   </div>
+   <div id="projectbrief">trabajo de practica de herramientas para programacion de proyectos de ing en C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;"
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d6/d7c/gpio_8h_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0"
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">gpio.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d7c/gpio_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Nombre del archivo: mi_archivo.c</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Descripción: [Breve descripción del archivo]</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Autor: Luis Gómez P.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Derechos de Autor: (C) 2023 [Tu nombre o el de tu organización]</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Licencia: GNU General Public License v3.0</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Este programa es software libre: puedes redistribuirlo y/o modificarlo</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * bajo los términos de la Licencia Pública General GNU publicada por</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * la Free Software Foundation, ya sea la versión 3 de la Licencia, o</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * (a tu elección) cualquier versión posterior.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * Este programa se distribuye con la esperanza de que sea útil,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * pero SIN NINGUNA GARANTÍA; sin siquiera la garantía implícita</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * de COMERCIABILIDAD o APTITUD PARA UN PROPÓSITO PARTICULAR. Ver la</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Licencia Pública General GNU para más detalles.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Deberías haber recibido una copia de la Licencia Pública General GNU</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * junto con este programa. Si no es así, visita &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * SPDX-License-Identifier: GPL-3.0-only</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef GPIO_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define GPIO_H</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* === Headers files inclusions ================================================================ */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* === Cabecera C++ ============================================================================ */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/* === Public macros definitions =============================================================== */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d6/d7c/gpio_8h.html#a31c00ae17f7f547cdc32889fec3aa354">   50</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d5/d3d/structgpio__h.html">gpio_h</a> * <a class="code" href="../../d6/d7c/gpio_8h.html#a31c00ae17f7f547cdc32889fec3aa354">gpio_t</a>; <span class="comment">// </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/* === Public data type declarations =========================================================== */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/* === Public variable declarations ============================================================ */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* === Public function declarations ============================================================ */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="../../d5/d3d/structgpio__h.html">gpio_t</a> <a class="code" href="../../d6/d7c/gpio_8h.html#a472aaa7bfb5a49d540555794670148d9">GpioCreate</a>(uint8_t <a class="code" href="../../d5/d3d/structgpio__h.html#a2fa54f9024782843172506fadbee2ac8">port</a>, uint8_t bit);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d7c/gpio_8h.html#a8d70818f5e8c0311f651e2e201db5e3f">GpioSetDirection</a>(<a class="code" href="../../d5/d3d/structgpio__h.html">gpio_t</a> gpio, <span class="keywordtype">bool</span> <a class="code" href="../../d5/d3d/structgpio__h.html#ac8417b655d0d4543f38713f704fabcb4">output</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d6/d7c/gpio_8h.html#a5875ab1fe3bce67410b786466cc932f6">GpioGetDirection</a>(<a class="code" href="../../d5/d3d/structgpio__h.html">gpio_t</a> gpio);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d7c/gpio_8h.html#ae0c3dfdb087dacefb244005e17adac61">GpioSetState</a>(<a class="code" href="../../d5/d3d/structgpio__h.html">gpio_t</a> gpio, <span class="keywordtype">bool</span> <a class="code" href="../../d5/d3d/structgpio__h.html#ab30ba07e2a0bd07a15e45a92c32db9c5">state</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d6/d7c/gpio_8h.html#a19cb94d85d3430b42ccf9a4aed626688">GpioGetState</a>(<a class="code" href="../../d5/d3d/structgpio__h.html">gpio_t</a> gpio);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/* === End of documentation ==================================================================== */</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPIO_H */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astructgpio__h_html_ac8417b655d0d4543f38713f704fabcb4"><div class="ttname"><a href="../../d5/d3d/structgpio__h.html#ac8417b655d0d4543f38713f704fabcb4">gpio_h::output</a></div><div class="ttdeci">bool output</div><div class="ttdoc">El puerto está configurado como salida.</div><div class="ttdef"><b>Definition:</b> gpio.c:48</div></div>
+<div class="ttc" id="agpio_8h_html_a5875ab1fe3bce67410b786466cc932f6"><div class="ttname"><a href="../../d6/d7c/gpio_8h.html#a5875ab1fe3bce67410b786466cc932f6">GpioGetDirection</a></div><div class="ttdeci">bool GpioGetDirection(gpio_t gpio)</div><div class="ttdoc">Obtiene la dirección actual de un GPIO.</div><div class="ttdef"><b>Definition:</b> gpio.c:124</div></div>
+<div class="ttc" id="agpio_8h_html_a472aaa7bfb5a49d540555794670148d9"><div class="ttname"><a href="../../d6/d7c/gpio_8h.html#a472aaa7bfb5a49d540555794670148d9">GpioCreate</a></div><div class="ttdeci">gpio_t GpioCreate(uint8_t port, uint8_t bit)</div><div class="ttdoc">Crea una nueva instancia de GPIO y la inicializa.</div><div class="ttdef"><b>Definition:</b> gpio.c:101</div></div>
+<div class="ttc" id="agpio_8h_html_a19cb94d85d3430b42ccf9a4aed626688"><div class="ttname"><a href="../../d6/d7c/gpio_8h.html#a19cb94d85d3430b42ccf9a4aed626688">GpioGetState</a></div><div class="ttdeci">bool GpioGetState(gpio_t gpio)</div><div class="ttdoc">Obtiene el estado actual de un GPIO.</div><div class="ttdef"><b>Definition:</b> gpio.c:134</div></div>
+<div class="ttc" id="agpio_8h_html_a31c00ae17f7f547cdc32889fec3aa354"><div class="ttname"><a href="../../d6/d7c/gpio_8h.html#a31c00ae17f7f547cdc32889fec3aa354">gpio_t</a></div><div class="ttdeci">struct gpio_h * gpio_t</div><div class="ttdoc">Puntero a una estructura anónima Estructura gpio_h pero no estoy definiendo cuales son los miembros....</div><div class="ttdef"><b>Definition:</b> gpio.h:50</div></div>
+<div class="ttc" id="astructgpio__h_html_ab30ba07e2a0bd07a15e45a92c32db9c5"><div class="ttname"><a href="../../d5/d3d/structgpio__h.html#ab30ba07e2a0bd07a15e45a92c32db9c5">gpio_h::state</a></div><div class="ttdeci">bool state</div><div class="ttdoc">Estado actual del puerto digital.</div><div class="ttdef"><b>Definition:</b> gpio.c:47</div></div>
+<div class="ttc" id="astructgpio__h_html"><div class="ttname"><a href="../../d5/d3d/structgpio__h.html">gpio_h</a></div><div class="ttdoc">estructura con los atributos de un puerto digital</div><div class="ttdef"><b>Definition:</b> gpio.c:44</div></div>
+<div class="ttc" id="agpio_8h_html_a8d70818f5e8c0311f651e2e201db5e3f"><div class="ttname"><a href="../../d6/d7c/gpio_8h.html#a8d70818f5e8c0311f651e2e201db5e3f">GpioSetDirection</a></div><div class="ttdeci">void GpioSetDirection(gpio_t gpio, bool output)</div><div class="ttdoc">Establece la dirección de un GPIO.</div><div class="ttdef"><b>Definition:</b> gpio.c:120</div></div>
+<div class="ttc" id="agpio_8h_html_ae0c3dfdb087dacefb244005e17adac61"><div class="ttname"><a href="../../d6/d7c/gpio_8h.html#ae0c3dfdb087dacefb244005e17adac61">GpioSetState</a></div><div class="ttdeci">void GpioSetState(gpio_t gpio, bool state)</div><div class="ttdoc">Establece el estado de un GPIO.</div><div class="ttdef"><b>Definition:</b> gpio.c:128</div></div>
+<div class="ttc" id="astructgpio__h_html_a2fa54f9024782843172506fadbee2ac8"><div class="ttname"><a href="../../d5/d3d/structgpio__h.html#a2fa54f9024782843172506fadbee2ac8">gpio_h::port</a></div><div class="ttdeci">uint8_t port</div><div class="ttdoc">Número de puerto GPIO.</div><div class="ttdef"><b>Definition:</b> gpio.c:45</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../d6/d7c/gpio_8h.html">gpio.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>
