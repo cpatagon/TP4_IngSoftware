@@ -29,7 +29,6 @@ rama develop de repositorio de la cátedra.
 
 ## Código implementado
 
-
 El conjunto de códigos que se desarrolló  forman parte de una biblioteca en C para la gestión de puertos y pines GPIO (General Purpose Input/Output) en sistemas embebidos. A continuación, se presenta un resumen de su funcionalidad y estructura:
 
 Encabezados (main.h y gpio.h):
@@ -47,7 +46,7 @@ Funciones de Gestión de GPIO:
     - **GpioSetState:** Establece el estado del GPIO (alto o bajo).
     - **GpioGetState:** Obtiene el estado actual del GPIO.
 - Gestión de Memoria (archivo anterior):
-            GpioAllocate: Función para asignar instancias GPIO de un pool estático, útil en sistemas con memoria limitada.
+    - **GpioAllocate:** Función para asignar instancias GPIO de un pool estático, útil en sistemas con memoria limitada.
 
 Implementación del Programa Principal (archivo principal):
 - **main:** Función principal que podría estar usando estas funciones GPIO para manipular LEDs u otros componentes de hardware.
@@ -62,26 +61,27 @@ Para este proyecto se construyo el siguiente archivo makefile [enlace](https://g
 
 Este Makefile está diseñado para un proyecto de software en C. La estructura del archivo se detalla a continuación:
 
-Definición de directorios:
+**Definición de directorios:**
 
  - **SRC_DIR:** Directorio de los archivos fuente (.c).
  - **INC_DIR:** Directorio de archivos de cabecera (.h).
  - **OUT_DIR:** Directorio de salida para los archivos generados.
  - **OBJ_DIR:** Subdirectorio en OUT_DIR para los archivos objeto (.o).
 
-Localización de archivos fuente y objeto:
+**Localización de archivos fuente y objeto:**
 
  - **SRC_FILES:** Encuentra todos los archivos .c en SRC_DIR.
  - **OBJ_FILES:** Convierte las rutas de SRC_FILES a rutas en OBJ_DIR para los archivos .o.
 
-Meta predeterminada:
+**Meta predeterminada:**
 
  - **.DEFAULT_GOAL:** Establece all como la meta predeterminada.
 
-Inclusión de archivos de dependencia:
+**Inclusión de archivos de dependencia:**
+
  - **-include:** Incluye archivos de dependencia para cada archivo objeto.
 
-Reglas:
+**Reglas:**
 
  - **all:** Enlaza los archivos objeto y genera el ejecutable app.elf en OUT_DIR.
 		Regla de patrón para compilar archivos fuente a objetos: Crea OBJ_DIR si no existe, compila cada archivo .c a .o y genera archivos de dependencia.
