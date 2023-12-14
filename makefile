@@ -29,6 +29,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 clean:
 	@rm -r $(OUT_DIR)
 
+# Regla para generar la documentación con Doxygen
 doc:
 	@mkdir -p $(OUT_DIR)
 	@doxygen doxyfile
